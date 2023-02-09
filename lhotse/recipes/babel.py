@@ -121,7 +121,7 @@ def prepare_single_babel_language(
 
         supervisions = []
         text_dir = corpus_dir / f"conversational/{split}/transcription"
-        for p in tqdm.tqdm(text_dir.glob("*")):
+        for p in tqdm.tqdm(text_dir.glob("*.txt")):
             # p.stem -> BABEL_BP_101_10033_20111024_205740_inLine
             # parts:
             #   0 -> BABEL
